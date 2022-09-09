@@ -6,7 +6,13 @@
 
 Console.WriteLine("Введите трехзначне число");
 int number = Convert.ToInt32 (Console.ReadLine());
-int count1 = number / 10;
-int count2 = count1 % 10;
-Console.WriteLine (count2);
-
+if(number < 100 || number > 999)
+{
+Console.WriteLine ("Введено не трехзначное число");
+}
+   else
+{
+   int count1 = number / 10;
+   int count2 = count1 % 10;
+   Console.WriteLine(count2);
+}
